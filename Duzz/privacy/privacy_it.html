@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Duzz — Informativa sulla Privacy</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+      color: #111827;
+      line-height: 1.6;
+    }
+    .back { color: #10b981; text-decoration: none; font-weight: 600; font-size: 14px; }
+    h1 { font-size: 28px; margin: 16px 0 4px; }
+    h2 { font-size: 20px; margin: 32px 0 12px; color: #059669; }
+    h3 { font-size: 16px; margin: 20px 0 8px; }
+    .muted { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+    th, td { padding: 8px 12px; border: 1px solid #e5e7eb; text-align: left; font-size: 14px; }
+    th { background: #f9fafb; }
+    code { background: #f3f4f6; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+    a { color: #059669; }
+  </style>
+</head>
+<body>
+<a class="back" href="index.html">← Torna</a>
+<h1>Informativa sulla Privacy — Duzz</h1>
+<p class="muted"><em>Ultimo aggiornamento: 26 giugno 2026</em></p>
+
+<p>La presente Informativa spiega come l'applicazione mobile <strong>Duzz</strong> ("l'App") tratta le tue informazioni. L'App è sviluppata da <strong>Patrik</strong> (di seguito "noi", "ci" o "il Titolare").</p>
+
+<h2>1. Chi siamo</h2>
+<ul>
+<li><strong>Titolare del trattamento</strong>: Patrik (sviluppatore indipendente)</li>
+<li><strong>Contatto</strong>: <a href="mailto:patrik.appdeveloper@gmail.com">patrik.appdeveloper@gmail.com</a></li>
+<li><strong>Paese</strong>: Italia</li>
+</ul>
+
+<h2>2. Principio generale: nessuna raccolta da parte nostra</h2>
+<p><strong>L'App non raccoglie, né trasmette, né archivia alcun dato personale sui nostri server.</strong> Tutto ciò che crei — allenamenti, schede, registro degli esercizi, misure corporee, <strong>foto dei progressi</strong> e impostazioni — è memorizzato <strong>esclusivamente sul tuo dispositivo</strong> tramite un database locale (Android Room) e le preferenze locali (DataStore). Non abbiamo alcun server, e i tuoi dati, comprese le foto dei progressi, <strong>non lasciano mai il tuo dispositivo</strong>.</p>
+
+<h2>3. Generatore di allenamenti con IA on-device</h2>
+<p>Duzz include un generatore di allenamenti con <strong>IA on-device</strong> opzionale. Quando lo attivi, un modello di IA viene scaricato una sola volta sul tuo dispositivo e poi funziona <strong>interamente sul tuo dispositivo, offline</strong>. I tuoi input e gli allenamenti generati sono elaborati <strong>localmente</strong> e non vengono mai inviati a noi né ad alcun server di terze parti.</p>
+
+<h2>4. Dati raccolti da terze parti (Google AdMob)</h2>
+<p>L'App mostra annunci pubblicitari forniti da <strong>Google AdMob</strong> (inclusi annunci banner, interstitial e premio "rewarded" facoltativi). AdMob è un servizio di Google LLC ed è soggetto alla propria informativa sulla privacy. Per erogare gli annunci, AdMob può raccogliere automaticamente:</p>
+<ul>
+<li>identificatori del dispositivo (Android Advertising ID)</li>
+<li>indirizzo IP</li>
+<li>informazioni di rete</li>
+<li>tipo di dispositivo, sistema operativo, lingua</li>
+<li>interazioni con gli annunci (visualizzazioni, clic)</li>
+<li>dati approssimativi di geolocalizzazione (a livello di paese/città, non di posizione precisa)</li>
+</ul>
+<p>Per i dettagli completi: <a href="https://policies.google.com/privacy">Norme sulla privacy di Google</a> · <a href="https://support.google.com/admob/answer/6128543">AdMob &amp; AdSense Data Policy</a>.</p>
+
+<h3>4.1 Consenso GDPR / ePrivacy (utenti UE/SEE/UK)</h3>
+<p>Al primo avvio dell'App, se ti trovi nell'Unione Europea, SEE o Regno Unito, vedrai un <strong>dialogo di consenso</strong> conforme a GDPR/ePrivacy. Puoi:</p>
+<ul>
+<li><strong>accettare</strong> gli annunci personalizzati;</li>
+<li><strong>rifiutare</strong> → riceverai comunque annunci, ma <strong>non personalizzati</strong>.</li>
+</ul>
+<p>Puoi reimpostare la tua scelta in qualsiasi momento azzerando il tuo Android Advertising ID (<strong>Impostazioni Android → Google → Annunci → "Reimposta ID pubblicità"</strong>) oppure reinstallando l'App.</p>
+
+<h2>5. Dati raccolti da altre terze parti</h2>
+<h3>5.1 Google Play Services</h3>
+<p>Se installi l'App da Google Play, Google Play raccoglie dati secondo le proprie norme: <a href="https://policies.google.com/privacy">Norme di Google Play</a>.</p>
+
+<h2>6. Permessi richiesti</h2>
+<table>
+<tr><th>Permesso</th><th>Motivo</th></tr>
+<tr><td><code>INTERNET</code></td><td>Caricare gli annunci e scaricare il modello IA opzionale</td></tr>
+<tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Verificare la connettività</td></tr>
+<tr><td><code>POST_NOTIFICATIONS</code></td><td>Promemoria di allenamento e avvisi del timer di recupero</td></tr>
+<tr><td><code>SCHEDULE_EXACT_ALARM</code> / <code>USE_EXACT_ALARM</code></td><td>Far scattare il timer di recupero all'orario giusto</td></tr>
+<tr><td><code>WAKE_LOCK</code> / <code>FOREGROUND_SERVICE</code></td><td>Mantenere attiva la generazione IA on-device a schermo spento</td></tr>
+<tr><td><code>VIBRATE</code></td><td>Vibrazione del timer di recupero e dei promemoria</td></tr>
+<tr><td><code>com.google.android.gms.permission.AD_ID</code></td><td>Usato da AdMob per erogare gli annunci</td></tr>
+</table>
+
+<h2>7. Condivisione delle tue informazioni</h2>
+<p>Quando tocchi "Condividi" su un allenamento o un programma, l'App genera un riepilogo testuale in locale e apre il menu di condivisione nativo di Android. <strong>Il contenuto è creato sul tuo dispositivo</strong> e inviato esclusivamente all'app di destinazione che scegli (WhatsApp, messaggi, email, ecc.). Noi non ne riceviamo alcuna copia.</p>
+
+<h2>8. Minori</h2>
+<p>L'App non è destinata a minori di 13 anni. Non raccogliamo consapevolmente dati da minori. AdMob è configurato per <strong>non indirizzare contenuti ai minori</strong> (COPPA).</p>
+
+<h2>9. Sicurezza dei dati</h2>
+<p>Poiché non raccogliamo dati, non vi è rischio di violazione dei dati dal nostro lato. I dati sul tuo dispositivo sono protetti dai meccanismi di sicurezza di Android (sandbox dell'app).</p>
+
+<h2>10. I tuoi diritti (GDPR)</h2>
+<p>Poiché non trattiamo dati personali sui nostri server, i diritti GDPR di accesso, rettifica, cancellazione, ecc. non si applicano alle nostre operazioni. Per esercitare tali diritti riguardo ai dati trattati da Google AdMob, fai riferimento alle <a href="https://policies.google.com/privacy">norme di Google</a>.</p>
+<p>In qualsiasi momento puoi:</p>
+<ul>
+<li><strong>Cancellare tutti i dati</strong>: disinstalla l'App → tutti i dati locali (comprese le foto dei progressi) vengono rimossi.</li>
+<li><strong>Reimpostare il consenso agli annunci personalizzati</strong>: azzera l'Android Advertising ID, oppure reinstalla l'App.</li>
+<li><strong>Reimpostare l'Android Advertising ID</strong>: Impostazioni Android → Google → Annunci → "Reimposta ID pubblicità".</li>
+</ul>
+
+<h2>11. Modifiche alla presente Informativa</h2>
+<p>Potremmo aggiornare questa Informativa nel tempo. La data dell'ultimo aggiornamento è indicata in alto. Le modifiche sostanziali saranno comunicate tramite un avviso nell'App.</p>
+
+<h2>12. Contatti</h2>
+<p>Per domande sulla privacy: <strong><a href="mailto:patrik.appdeveloper@gmail.com">patrik.appdeveloper@gmail.com</a></strong></p>
+</body>
+</html>
